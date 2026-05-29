@@ -89,7 +89,8 @@ function App() {
             {/* InputBox for target currency */}
             <div className="w-full mt-1 mb-4">
               <InputBox
-                className='bg-gradient-to-r from-yellow-400 to-yellow-600 transform hover:scale-105 transition-all duration-400 ease-out '
+                className='bg-gradient-to-r from-yellow-400 to-yellow-600 transform hover:scale-105 
+                transition-all duration-400 ease-out '
 
                 // Label text for output box
                 label="To"

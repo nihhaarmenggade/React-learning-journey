@@ -1,0 +1,30 @@
+In React Context Api is global component which use to provide data to other components 
+Rather than using multiple props and handling unwanted data for data transmission we use global component Context api 
+S1:A: frist we create a js file name UserContext.js
+A : We have a function which is known as React.createContext()
+: every context gives a provider so UserContext() also has a provider and basically we will wrap the components with UserContext()
+
+S2:B: So we create a jsx file for the UserContext() provider in jsx which is UserContextProvider.jsx
+B : In that we create a function named UserContextProvider() and pass the childeren value in it Childeren refers to Components wrpaed like login.jsx profile.jsx are Children
+: We create a usestate hook for data named user and setuser to pass data
+:Than we use a funtion called userContext.Provider and use a property called Value to fetch data or aceses data from usestate
+
+S3:C:We create two components Login.jsx and Profile.jsx to see how data is acssesd and how data is sent
+C:To understand how data is fetch from userContext we have a basic login component to demonstarte
+:We use a hook useContext to get accessecs of the userContext by writing const {setUser}= UseContext(UserContext)
+:SetUser is taken from UserContext.provider useState hook
+:Data is being updated from Login through UserContextProvider using Context API
+:Login Component
+      ↓
+useContext(UserContext)
+      ↓
+Gets access to SetUser
+      ↓
+Updates data inside Provider
+      ↓
+All components using UserContext get updated data
+
+:So in login.jsx setuser is use to send or update the data now we will be studying how to accesse the data 
+:To accses the data we use the same methode and hook useContext in profile.jsx
+:const {user} = useContext(userContext)
+:In UserContextProvider user is used in usestate hook to acces the data directly and setuser to update the data or the user using the same methode and hook usecontext 
