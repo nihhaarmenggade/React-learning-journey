@@ -1,5 +1,5 @@
     import React from 'react'
-    import ThemeBtn from './ThemeBtn';
+    import ThemeBtn from './';
 
     export default function Card() {
         return (
