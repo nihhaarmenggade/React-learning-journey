@@ -2,6 +2,9 @@
 
 A modern Currency Converter web application built with React and Tailwind CSS, featuring a custom React hook (useCurrencyInfo) for handling API logic and a reusable JSX component (InputBox) for inputs and currency selection. The app fetches real-time exchange rates and provides a clean, responsive UI.
 
+🌐 Check the live project :
+https://react-learning-journey-apce-pnttgctq8.vercel.app/
+
 
 ## 🚀 Features
 
